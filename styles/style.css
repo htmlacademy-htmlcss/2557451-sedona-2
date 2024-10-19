@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+
+.navigation-list,
+.navigation-user {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.advantages-text,
+.advantages-description,
+.advantages-list,
+.advantages-title {
+  margin: 0;
+  padding: 0;
+}
+
+.services-text,
+.services-description,
+.devices-list,
+.services-title,
+.services-item,
+.service-title {
+  margin: 0;
+  padding: 0;
+}
+
+
+.booking-text,
+.booking-description {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-text,
+.subscribe-button {
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
