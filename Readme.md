@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Иван Щербаков](https://up.htmlacademy.ru/htmlcss-individual/2/user/2557451).
-* Наставник: `Неизвестно`.
+- Студент: [Иван Щербаков](https://up.htmlacademy.ru/htmlcss-individual/2/user/2557451).
+- Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+- Сайт: [Мой проект Седона](https://robot756.github.io/2557451-sedona-2/)
 
 ---
 
