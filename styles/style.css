@@ -405,7 +405,6 @@ body {
 
 .booking-description {
   margin: 0 0 52px 0;
-  font-family: PT Sans;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -433,7 +432,6 @@ body {
   background-color: #615048;
   color: #ffffff;
 }
-
 
 .booking-link:active {
   background-color: #756157;
@@ -489,7 +487,7 @@ body {
   padding: 0;
   width: 452px;
   min-height: 52px;
-  font-family: PT Sans;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -572,11 +570,11 @@ body {
 
 .socials-item-icon:hover,
 .socials-item-icon:focus {
-  fill: #68a2ca; 
+  fill: #68a2ca;
 }
 
 .socials-item-icon:active {
-  fill: rgba(104, 162, 202, 0.302); 
+  fill: rgba(104, 162, 202, 0.302);
 }
 
 .contacts {
@@ -643,7 +641,7 @@ body {
   height: 52px;
   border: none;
   cursor: pointer;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -709,7 +707,7 @@ body {
   padding: 0 0 0 21px;
   grid-row: 1 / 2;
   grid-column: 2 / -1;
-  background-image: url("/images/calendar.svg");
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: 95% center;
   outline: none;
@@ -805,7 +803,7 @@ body {
   width: 31px;
   min-height: 48px;
   border: none;
-  font-family: PT Sans;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -852,7 +850,7 @@ body {
   border: none;
   border-radius: 100%;
   cursor: pointer;
-  background-image: url("/images/exclamation-point.svg");
+  background-image: url("../images/exclamation-point.svg");
   background-repeat: no-repeat;
   background-position: center;
   left: -30px;
@@ -881,7 +879,7 @@ body {
 .popover-content::before {
   content: "";
   position: absolute;
-  background-image: url("/images/mark-point.svg");
+  background-image: url("../images/mark-point.svg");
   width: 19px;
   height: 9px;
   top: -9px;
@@ -978,7 +976,7 @@ input[type="number"] {
   content: "";
   position: absolute;
   display: block;
-  background-image: url("/images/arrow.svg");
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   width: 7px;
   height: 11px;
@@ -1089,11 +1087,10 @@ input[type="number"] {
   left: 0;
 }
 
-.control-input-checkbox[type="checkbox"]:checked +
-.control-mark::before {
+.control-input-checkbox[type="checkbox"]:checked + .control-mark::before {
   content: "";
   position: absolute;
-  background-image: url("/images/mark-checkbox.svg");
+  background-image: url("../images/mark-checkbox.svg");
   background-repeat: no-repeat;
   width: 12px;
   height: 10px;
@@ -1101,8 +1098,7 @@ input[type="number"] {
   right: 4px;
 }
 
-.control-input-checkbox[type="checkbox"]:focus + 
-.control-mark {
+.control-input-checkbox[type="checkbox"]:focus + .control-mark {
   outline: 3px solid #83b3d3
 }
 
@@ -1136,16 +1132,14 @@ input[type="number"] {
   left: 0;
 }
 
-.control-input-radio:focus + 
-.control-radio-mark {
+.control-input-radio:focus + .control-radio-mark {
   outline: 3px solid #83b3d3
 }
 
-.control-input-radio[type="radio"]:checked +
-.control-radio-mark::before {
+.control-input-radio[type="radio"]:checked + .control-radio-mark::before {
   content: "";
   position: absolute;
-  background-image: url("/images/mark-radiobox.svg");
+  background-image: url("../images/mark-radiobox.svg");
   background-repeat: no-repeat;
   width: 11px;
   height: 11px;
@@ -1191,7 +1185,7 @@ input[type="number"] {
 }
 
 .input-prime:focus {
-  outline: 3px solid #83B3D3
+  outline: 3px solid #83b3d3
 }
 
 .input-from-cost {
@@ -1199,7 +1193,7 @@ input[type="number"] {
 }
 
 .from-cost {
-  font-family: inherit;  
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1215,10 +1209,10 @@ input[type="number"] {
 
 .input-to-cost {
   border-radius: 0 4px 4px 0;
-} 
+}
 
 .to-cost {
-  font-family: inherit;  
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1317,7 +1311,7 @@ input[type="number"] {
   padding: 10px 0 7px 0;
 }
 
-.reset:hover {  
+.reset:hover {
   color: rgb(255, 255, 255, 0.6);
 }
 
@@ -1335,7 +1329,7 @@ input[type="number"] {
 }
 
 .sort-products {
-  margin: 0 70px 0 70px
+  margin: 0 70px;
 }
 
 .sort-products-container {
@@ -1352,7 +1346,7 @@ input[type="number"] {
   color: #000000;
   text-transform: uppercase;
   width: 372px;
-  margin: 7px 0 0 0;
+  margin: 7px 0 0;
   padding: 0;
 }
 
@@ -1370,10 +1364,9 @@ input[type="number"] {
   outline: none;
   border: 2px solid #e5e5e5;
   appearance: none;
-  background-image: url("/images/select-arrow.svg");
+  background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: 258px 50%;
-
 }
 
 .select-control:hover {
@@ -1420,19 +1413,19 @@ input[type="number"] {
 }
 
 .button-card-all {
-  background-image: url("/images/card-all.svg");
+  background-image: url("../images/card-all.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .button-card-slide {
-  background-image: url("/images/card-slide.svg");
+  background-image: url("../images/card-slide.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .button-card-list {
-  background-image: url("/images/card-list.svg");
+  background-image: url("../images/card-list.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1452,10 +1445,10 @@ input[type="number"] {
   border: 1px solid #e6e6e6;
   display: grid;
   grid-template-areas: "link link"
-                       "title title"
-                       "type-hotel cost-hotel"
-                       "more-information in-favorites"
-                       "strars-rating number-rating";
+    "title title"
+    "type-hotel cost-hotel"
+    "more-information in-favorites"
+    "strars-rating number-rating";
   gap: 16px 19px;
   border-radius: 4px;
   grid-template-rows: 212px auto min-content min-content min-content;
@@ -1512,13 +1505,15 @@ input[type="number"] {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
-  border:none;
+  border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   margin: 0;
   padding: 9px 0 7px 0;
   grid-area: more-information;
+  text-align: center;
+  text-decoration: none;
 }
 
 .product-more-information:hover,
@@ -1548,12 +1543,12 @@ input[type="number"] {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #82b3d3;
-  border:none;
+  border: none;
   outline: none;
   cursor: pointer;
   grid-area: in-favorites;
   border-radius: 4px;
-  padding: 9px 0 0 0
+  padding: 9px 0 0;
 }
 
 .product-in-favorites:hover,
@@ -1577,16 +1572,16 @@ input[type="number"] {
 .product-four-stars::before {
   content: "";
   position: absolute;
-  background-image: url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg");
-  background-position: 
-   0 0,
-   24px 0,
-   48px 0,
-   72px 0;
+  background-image: url("../images/star-rating.svg"),
+    url("../images/star-rating.svg"),
+    url("../images/star-rating.svg"),
+    url("../images/star-rating.svg"),
+    url("../images/star-rating.svg");
+  background-position:
+    0 0,
+    24px 0,
+    48px 0,
+    72px 0;
   width: 100px;
   background-repeat: no-repeat;
   height: 17px;
@@ -1594,21 +1589,21 @@ input[type="number"] {
 }
 
 .product-number-rating {
-font-family: inherit;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: center;
-display: block;
-width: 140px;
-border-radius: 4px;
-color: #333333;
-background-color: #f2f2f2;
-border:none;
-outline: none;
-padding: 11px 0 7px 2px;
-text-transform: uppercase;
-grid-area: number-rating;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  width: 140px;
+  border-radius: 4px;
+  color: #333333;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 11px 0 7px 2px;
+  text-transform: uppercase;
+  grid-area: number-rating;
 }
 
 .product-in-favorites-active {
@@ -1633,13 +1628,13 @@ grid-area: number-rating;
 .product-three-stars::before {
   content: "";
   position: absolute;
-  background-image: url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg");
-  background-position: 
-   0 0,
-   24px 0,
-   48px 0;
+  background-image: url("../images/star-rating.svg"),
+    url("../images/star-rating.svg"),
+    url("../images/star-rating.svg");
+  background-position:
+    0 0,
+    24px 0,
+    48px 0;
   width: 100px;
   background-repeat: no-repeat;
   height: 17px;
@@ -1649,11 +1644,11 @@ grid-area: number-rating;
 .product-two-stars::before {
   content: "";
   position: absolute;
-  background-image: url("/images/star-rating.svg"),
-                    url("/images/star-rating.svg");
-  background-position: 
-   0 0,
-   24px 0;
+  background-image: url("../images/star-rating.svg"),
+    url("../images/star-rating.svg");
+  background-position:
+    0 0,
+    24px 0;
   width: 100px;
   background-repeat: no-repeat;
   height: 17px;
@@ -1666,7 +1661,7 @@ grid-area: number-rating;
   padding: 0;
   display: flex;
   min-width: 400px;
-  gap: 8px
+  gap: 8px;
 }
 
 .pagination::after {
@@ -1679,7 +1674,7 @@ grid-area: number-rating;
 }
 
 .pagination-item {
-  list-style-type: none 
+  list-style-type: none
 }
 
 .pagination-link {
@@ -1690,27 +1685,64 @@ grid-area: number-rating;
   font-weight: 700;
   line-height: 36px;
   text-decoration: none;
-  color: #000000;
-  background-color: #f2f2f2;
   border-radius: 4px;
   height: 60px;
   width: 60px;
-}
-
-.pagination-disabled {
   background-color: #82b3d3;
   color: #ffffff;
 }
 
-.pagination-disabled:hover,
-.pagination-disabled:focus {
+.pagination-link:hover{
   background-color: #68a2ca;
-  outline: 1px solid #82b3d3
 }
 
-.pagination-disabled:active {
+.pagination-link:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.pagination-link:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.302);
+}
+
+.pagination-active {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-active:hover {
+  color: rgba(0, 0, 0, 0.302);
+  background-color: #dbd7d7;
+}
+
+.pagination-active:focus {
+  color: rgba(0, 0, 0, 0.302);
+  background-color: #dbd7d7;
+  outline: none;
+}
+
+.pagination-active:active {
+  color: rgba(0, 0, 0, 0.102);
+}
+
+.pagination-next {
+  background-color: transparent;
+  color: #000000;
+}
+
+.pagination-next:hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.pagination-next:focus {
+  outline: 2px solid #82b3d3;
+  background-color: transparent;
+}
+
+.pagination-next:active {
+  opacity: 0.3;
 }
 
 .subscribe-catalog {
@@ -1754,11 +1786,3 @@ grid-area: number-rating;
   border: none;
   outline: none;
 }
-
-
-
-
-
-
-
-
